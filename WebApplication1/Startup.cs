@@ -6,6 +6,7 @@ using System.Reflection;
 using System.Threading.Tasks;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
+using fwc.netcore.demo.CommonHelper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -54,7 +55,8 @@ namespace WebApplication1
             //将collection中的服务填充到Autofac
             builder.Populate(services);
             //注册InstanceModule组件
-            builder.RegisterModule<ServiceNinject>();
+            builder.RegisterModule(new ServiceNinject(Configuration));
+
             //创建容器
             IContainer container = builder.Build();
             //第三方容器接管Core内置的DI容器
