@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29911.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "test", "ConsoleApp1\test.csproj", "{ADFFE375-2025-4EBD-A18C-FBD9543C4B79}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "fwc.netcore.demo", "WebApplication1\fwc.netcore.demo.csproj", "{1C2B93DD-222C-4C1A-84B7-F64AAB51B2B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "test.api", "WebApplication1\test.api.csproj", "{1C2B93DD-222C-4C1A-84B7-F64AAB51B2B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
